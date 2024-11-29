@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+</head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 将内容放置顶部以便适配更多内容 */
+            align-items: center;
+            height: 100vh;
+            background: url('test.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+    .register-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+<body>
+    <div class="register-container">
+        <h2>注册留言板</h2>
+        <form  action="register.php" method="post">
+            <div class="input-group">
+                <label for="name">输入用户名</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="password">输入密码</label>
+                <input type="password" id="password1" name="password1" required>
+            </div>
+            <div class="input-group">
+                <label for="password">确认密码</label>
+                <input type="password" id="password2" name="password2" required>
+            </div>
+            <div class="input-group">
+                <label for="email">输入邮箱</label>
+                <input type="test" id="email" name="email" required>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+</body>   
+</html>
